@@ -31,10 +31,9 @@ cc -O2 -shared -fPIC -o libvoidstar.so libvoidstar.c
 ```
 
 If you would rather not build it yourself, Antithesis distributes a
-prebuilt binary — see the [Antithesis documentation](https://antithesis.com/docs/)
-for the current download location. The prebuilt binary is linked against
-glibc; if you build with musl, compile this file with your own toolchain 
-instead.
+prebuilt binary in the [Releases](https://github.com/antithesishq/antithesis_stub/releases) section. The prebuilt binary 
+is linked against glibc; if you build with musl, compile this file 
+with your own toolchain instead.
 
 Do not link this library statically, since that defeats its entire purpose. If 
 your program must be fully static, contact Antithesis support so we can help 
