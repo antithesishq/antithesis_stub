@@ -70,6 +70,12 @@ void __sanitizer_cov_trace_pc_guard_internal(uint32_t *guard, uint64_t edge) {
 void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
     (void)guard;
 }
+
+// Emitted by -fsanitize-coverage=pc-table.
+void __sanitizer_cov_pcs_init(const uintptr_t *pcs_beg, const uintptr_t *pcs_end) {
+    (void)pcs_beg;
+    (void)pcs_end;
+}
 #if defined(__clang__)
 #pragma clang diagnostic pop
 #endif
